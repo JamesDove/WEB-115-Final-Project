@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEB-115 Final Project</title>
+</head>
+
+<body>
+    <div style="background-color: #4c9baf; color: white; padding: 15px 32px; text-align: center;">
+        <h1>Build Your Meal Plan</h1>
+        <p>James Dove, WEB-115, Section 0001</p>
+    </div>
+    <form>
+        <h2>Meal Planner</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Breakfast</th>
+                <th>Snack 1</th>
+                <th>Lunch</th>
+                <th>Snack 2</th>
+                <th>Dinner</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td><input type="text" name="monday_breakfast"></td>
+                <td><input type="text" name="monday_snack1"></td>
+                <td><input type="text" name="monday_lunch"></td>
+                <td><input type="text" name="monday_snack2"></td>
+                <td><input type="text" name="monday_dinner"></td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td><input type="text" name="tuesday_breakfast"></td>
+                <td><input type="text" name="tuesday_snack1"></td>
+                <td><input type="text" name="tuesday_lunch"></td>
+                <td><input type="text" name="tuesday_snack2"></td>
+                <td><input type="text" name="tuesday_dinner"></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td><input type="text" name="wednesday_breakfast"></td>
+                <td><input type="text" name="wednesday_snack1"></td>
+                <td><input type="text" name="wednesday_lunch"></td>
+                <td><input type="text" name="wednesday_snack2"></td>
+                <td><input type="text" name="wednesday_dinner"></td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td><input type="text" name="thursday_breakfast"></td>
+                <td><input type="text" name="thursday_snack1"></td>
+                <td><input type="text" name="thursday_lunch"></td>
+                <td><input type="text" name="thursday_snack2"></td>
+                <td><input type="text" name="thursday_dinner"></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td><input type="text" name="friday_breakfast"></td>
+                <td><input type="text" name="friday_snack1"></td>
+                <td><input type="text" name="friday_lunch"></td>
+                <td><input type="text" name="friday_snack2"></td>
+                <td><input type="text" name="friday_dinner"></td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td><input type="text" name="saturday_breakfast"></td>
+                <td><input type="text" name="saturday_snack1"></td>
+                <td><input type="text" name="saturday_lunch"></td>
+                <td><input type="text" name="saturday_snack2"></td>
+                <td><input type="text" name="saturday_dinner"></td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td><input type="text" name="sunday_breakfast"></td>
+                <td><input type="text" name="sunday_snack1"></td>
+                <td><input type="text" name="sunday_lunch"></td>
+                <td><input type="text" name="sunday_snack2"></td>
+                <td><input type="text" name="sunday_dinner"></td>
+            </tr>
+        </table>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="goal">Weekly Goal:</label><br>
+        <textarea id="goal" name="goal" rows="4" cols="50"></textarea><br>
+        <input type="button" value="Create New Page" onclick="createNewPage()">
+        <input type="button" value="Print Page" onclick="printPage()">
+        <input type="button" value="Download Page" onclick="downloadPage()">
+    </form>
+</body>
+
+</html>
