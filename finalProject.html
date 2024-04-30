@@ -3,91 +3,104 @@
 
 <head>
     <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="projectJS.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div style="background-color: #4c9baf; color: white; padding: 15px 32px; text-align: center;">
-        <h1>Build Your Meal Plan</h1>
-        <p>James Dove, WEB-115, Section 0001</p>
+    <div id="banner"
+        style="background-image: url('pexels-pixabay-326281.jpg'); color: lightgoldenrodyellow; padding: 15px 32px; text-align: center; background-size: cover; height: 200px; background-position: center; border: 2px solid #000;">
+        <h1 class="pacifico-headeruno">Build Your Meal Plan</h1>
+        <p>By: James Dove</p>
+        <p>WEB-115, Section 0001</p>
     </div>
-    <form>
-        <h2>Meal Planner</h2>
-        <table>
-            <tr>
-                <th>Day</th>
-                <th>Breakfast</th>
-                <th>Snack 1</th>
-                <th>Lunch</th>
-                <th>Snack 2</th>
-                <th>Dinner</th>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td><input type="text" name="monday_breakfast"></td>
-                <td><input type="text" name="monday_snack1"></td>
-                <td><input type="text" name="monday_lunch"></td>
-                <td><input type="text" name="monday_snack2"></td>
-                <td><input type="text" name="monday_dinner"></td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td><input type="text" name="tuesday_breakfast"></td>
-                <td><input type="text" name="tuesday_snack1"></td>
-                <td><input type="text" name="tuesday_lunch"></td>
-                <td><input type="text" name="tuesday_snack2"></td>
-                <td><input type="text" name="tuesday_dinner"></td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td><input type="text" name="wednesday_breakfast"></td>
-                <td><input type="text" name="wednesday_snack1"></td>
-                <td><input type="text" name="wednesday_lunch"></td>
-                <td><input type="text" name="wednesday_snack2"></td>
-                <td><input type="text" name="wednesday_dinner"></td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td><input type="text" name="thursday_breakfast"></td>
-                <td><input type="text" name="thursday_snack1"></td>
-                <td><input type="text" name="thursday_lunch"></td>
-                <td><input type="text" name="thursday_snack2"></td>
-                <td><input type="text" name="thursday_dinner"></td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td><input type="text" name="friday_breakfast"></td>
-                <td><input type="text" name="friday_snack1"></td>
-                <td><input type="text" name="friday_lunch"></td>
-                <td><input type="text" name="friday_snack2"></td>
-                <td><input type="text" name="friday_dinner"></td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td><input type="text" name="saturday_breakfast"></td>
-                <td><input type="text" name="saturday_snack1"></td>
-                <td><input type="text" name="saturday_lunch"></td>
-                <td><input type="text" name="saturday_snack2"></td>
-                <td><input type="text" name="saturday_dinner"></td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td><input type="text" name="sunday_breakfast"></td>
-                <td><input type="text" name="sunday_snack1"></td>
-                <td><input type="text" name="sunday_lunch"></td>
-                <td><input type="text" name="sunday_snack2"></td>
-                <td><input type="text" name="sunday_dinner"></td>
-            </tr>
-        </table>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="goal">Weekly Goal:</label><br>
-        <textarea id="goal" name="goal" rows="4" cols="50"></textarea><br>
-        <input type="button" value="Create New Page" onclick="createNewPage()">
-        <input type="button" value="Print Page" onclick="printPage()">
-        <input type="button" value="Download Page" onclick="downloadPage()">
-    </form>
+    <div id="formContent">
+        <form style="background-color: lightgoldenrodyellow; border: 2px solid #000;">
+            <h2 class="pacifico-headerdos">Meal Planner</h2>
+            <table>
+                <tr>
+                    <th class="caveat-text">Day</th>
+                    <th class="caveat-text">Breakfast</th>
+                    <th class="caveat-text">Snack 1</th>
+                    <th class="caveat-text">Lunch</th>
+                    <th class="caveat-text">Snack 2</th>
+                    <th class="caveat-text">Dinner</th>
+                </tr>
+                <tr>
+                    <td class="caveat-text">Monday</td>
+                    <td><input type="text" name="monday_breakfast"></td>
+                    <td><input type="text" name="monday_snack1"></td>
+                    <td><input type="text" name="monday_lunch"></td>
+                    <td><input type="text" name="monday_snack2"></td>
+                    <td><input type="text" name="monday_dinner"></td>
+                </tr>
+                <tr>
+                    <td class="caveat-text">Tuesday</td>
+                    <td><input type="text" name="tuesday_breakfast"></td>
+                    <td><input type="text" name="tuesday_snack1"></td>
+                    <td><input type="text" name="tuesday_lunch"></td>
+                    <td><input type="text" name="tuesday_snack2"></td>
+                    <td><input type="text" name="tuesday_dinner"></td>
+                </tr>
+                <tr>
+                    <td class="caveat-text">Wednesday</td>
+                    <td><input type="text" name="wednesday_breakfast"></td>
+                    <td><input type="text" name="wednesday_snack1"></td>
+                    <td><input type="text" name="wednesday_lunch"></td>
+                    <td><input type="text" name="wednesday_snack2"></td>
+                    <td><input type="text" name="wednesday_dinner"></td>
+                </tr>
+                <tr>
+                    <td class="caveat-text">Thursday</td>
+                    <td><input type="text" name="thursday_breakfast"></td>
+                    <td><input type="text" name="thursday_snack1"></td>
+                    <td><input type="text" name="thursday_lunch"></td>
+                    <td><input type="text" name="thursday_snack2"></td>
+                    <td><input type="text" name="thursday_dinner"></td>
+                </tr>
+                <tr>
+                    <td class="caveat-text">Friday</td>
+                    <td><input type="text" name="friday_breakfast"></td>
+                    <td><input type="text" name="friday_snack1"></td>
+                    <td><input type="text" name="friday_lunch"></td>
+                    <td><input type="text" name="friday_snack2"></td>
+                    <td><input type="text" name="friday_dinner"></td>
+                </tr>
+                <tr>
+                    <td class="caveat-text">Saturday</td>
+                    <td><input type="text" name="saturday_breakfast"></td>
+                    <td><input type="text" name="saturday_snack1"></td>
+                    <td><input type="text" name="saturday_lunch"></td>
+                    <td><input type="text" name="saturday_snack2"></td>
+                    <td><input type="text" name="saturday_dinner"></td>
+                </tr>
+                <tr>
+                    <td class="caveat-text">Sunday</td>
+                    <td><input type="text" name="sunday_breakfast"></td>
+                    <td><input type="text" name="sunday_snack1"></td>
+                    <td><input type="text" name="sunday_lunch"></td>
+                    <td><input type="text" name="sunday_snack2"></td>
+                    <td><input type="text" name="sunday_dinner"></td>
+                </tr>
+            </table>
+            <div style="border: 2px solid #000; padding: 10px; margin-top: 20px;">
+                <label class="caveat-text" for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label class="caveat-text" for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label class="caveat-text" for="goal">Weekly Goal:</label><br>
+                <textarea id="goal" name="goal" rows="4" cols="50"></textarea><br>
+                <input type="button" value="Print Page">
+                <input type="button" value="Download Page">
+                <input type="button" value="Clear Form">
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

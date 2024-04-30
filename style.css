@@ -1,0 +1,42 @@
+form {
+    border: 2px solid #4c9baf;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1.pacifico-headeruno {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+
+}
+
+h2.pacifico-headerdos {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.caveat-text {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+@media print {
+
+    input[type="button"],
+    #banner {
+        display: none;
+    }
+}
+
+table input[type="text"] {
+    width: 100px;
+    box-sizing: border-box;
+}
